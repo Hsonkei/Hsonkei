@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Sonkei — Créations au fil, faites main avec amour</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet"><style id="css">
+:root{--bg:#fff0ec;--fg:#4a2336;--mut:#94606f;--acc:#e5566d;--acc2:#ffc85c;--rose:#ffd3d8;--card:#fffaf8;--line:#f8d5d4;--soft:#ffe1dc;--shadow:0 8px 24px rgba(200,70,100,.15);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1620;--fg:#ffeef0;--mut:#d9a7b3;--acc:#ff7a8e;--acc2:#f2b94f;--rose:#4d2433;--card:#351c28;--line:#50303d;--soft:#301a25;--shadow:0 8px 24px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#2a1620;--fg:#ffeef0;--mut:#d9a7b3;--acc:#ff7a8e;--acc2:#f2b94f;--rose:#4d2433;--card:#351c28;--line:#50303d;--soft:#301a25;--shadow:0 8px 24px rgba(0,0,0,.35)}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'DM Sans',system-ui,sans-serif;line-height:1.7;font-size:1.02rem}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;font-weight:600;margin:0;line-height:1.15}
+.hand{font-family:Caveat,'Comic Sans MS',cursive;color:var(--acc);font-size:1.5rem;margin:0}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:2px dashed var(--line);display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.2rem;gap:1rem;flex-wrap:wrap}
+header b{font-family:Fraunces,serif;font-size:1.6rem;font-style:italic;color:var(--acc)}
+nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+nav a{color:var(--fg);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--acc)}
+section{max-width:960px;margin:0 auto;padding:3.5rem 1.2rem;position:relative}
+.hero{padding-top:4rem;text-align:center;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;z-index:0;opacity:.55}
+.hero::before{width:300px;height:300px;background:var(--rose);top:-90px;left:-110px}
+.hero::after{width:240px;height:240px;background:var(--acc2);opacity:.28;bottom:-80px;right:-80px}
+.hero>*{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.3rem,8vw,4.4rem);margin:.3rem 0}
+.hero h1 em{color:var(--acc)}
+.hero p{max-width:34rem;margin:.8rem auto;font-size:1.1rem;color:var(--mut)}
+.yarn{width:100%;max-width:360px;height:30px;margin:.8rem auto;display:block;color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#fff;border:0;padding:.85rem 1.6rem;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;border-radius:40px;box-shadow:var(--shadow);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:var(--card);color:var(--acc);border:2px solid var(--acc);box-shadow:none}
+.btn.sm{padding:.4rem .9rem;font-size:.85rem}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+.title{text-align:center;margin-bottom:.4rem}
+.lead{text-align:center;max-width:36rem;margin:.6rem auto 0;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem;margin-top:2rem}
+.card{background:var(--card);border:2px solid var(--line);padding:1.1rem;border-radius:24px;box-shadow:var(--shadow)}
+.ph{aspect-ratio:1;background:var(--soft);border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;color:var(--mut);font-size:2rem;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.card h3{font-size:1.15rem}.card p{margin:.3rem 0;color:var(--mut);font-size:.94rem}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:.7rem}
+.row b{font-family:Fraunces,serif;font-size:1.2rem;color:var(--acc)}
+.row .btn{padding:.5rem 1.1rem;font-size:.9rem}
+form{display:grid;gap:.9rem;max-width:520px;margin:1.6rem auto 0;background:var(--card);border:2px solid var(--line);border-radius:28px;padding:1.5rem;box-shadow:var(--shadow)}
+label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+label.btn{display:inline-block}
+input,select,textarea{font:inherit;font-weight:400;padding:.7rem .9rem;border:2px solid var(--line);background:var(--bg);color:var(--fg);border-radius:16px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc)}
+.alt-bg{background:var(--soft);border-radius:48px 48px 0 0}
+.alt-bg.flat{border-radius:0}
+a.l{color:var(--acc)}
+#cart{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));background:var(--acc);color:#fff;padding:.75rem 1.3rem;border:0;font:inherit;font-weight:600;cursor:pointer;border-radius:40px;z-index:6;box-shadow:var(--shadow)}
+#panel{display:none;position:fixed;right:1rem;bottom:calc(4.6rem + env(safe-area-inset-bottom,0px));width:min(340px,calc(100vw - 2rem));max-height:60vh;overflow:auto;background:var(--card);border:2px solid var(--acc);border-radius:22px;padding:1rem;z-index:6;box-shadow:var(--shadow)}
+#panel.open{display:block}
+#panel ul{list-style:none;padding:0;margin:0 0 .8rem}
+#panel li{display:flex;justify-content:space-between;gap:.5rem;margin:.3rem 0;font-size:.92rem}
+#panel a{color:var(--acc)}
+#toast{position:fixed;left:50%;top:calc(4.5rem + env(safe-area-inset-top,0px));transform:translateX(-50%) translateY(-20px);background:var(--fg);color:var(--bg);padding:.6rem 1.2rem;border-radius:30px;opacity:0;transition:.25s;z-index:7;pointer-events:none;font-size:.92rem}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#edbtn{position:fixed;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));background:var(--fg);color:var(--bg);padding:.75rem 1.2rem;border:0;font:inherit;font-weight:600;cursor:pointer;border-radius:40px;z-index:8}
+#ed{display:none;position:fixed;left:1rem;bottom:calc(4.6rem + env(safe-area-inset-bottom,0px));top:calc(4rem + env(safe-area-inset-top,0px));width:min(380px,calc(100vw - 2rem));overflow:auto;background:var(--card);border:2px solid var(--fg);border-radius:22px;padding:1rem;z-index:8;box-shadow:var(--shadow)}
+#ed.open{display:grid;gap:.7rem;align-content:start}
+.pe{display:grid;gap:.4rem;border-top:2px dashed var(--line);padding-top:.7rem}
+.pr{display:flex;gap:.5rem;flex-wrap:wrap}
+#msg{margin:0;font-size:.9rem;color:var(--mut)}
+#gate{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:10}.gbox{background:var(--card);border:2px solid var(--acc);border-radius:22px;padding:1.2rem;display:grid;gap:.7rem;width:min(300px,86vw);text-align:center}#secret{cursor:default}
+footer{text-align:center;padding:2.5rem 1rem 5rem;color:var(--mut);background:var(--soft)}
+</style></head><body><script id="data" type="application/json">{"name":"Sonkei","email":"sonkee7ii@gmail.com","insta":"@hadzayna","hero":"Ici, chaque pièce est pensée, reproduite et réalisée à la main, fil après fil, avec beaucoup de douceur. Installe-toi, regarde, et dis-moi ce qui te fait envie.","atelier":"Je crée chaque pièce comme un petit cadeau, avec du temps et de l’attention. Remplace ce texte par ton histoire : ce qui t’a donné envie de créer, et ce qui compte pour toi.","products":[{"n":"Porte-clé Spiderman","d":"Spiderman, Superman ou un autre héros ? Dis moi ton préféré et je donnerai vie à ton personnage en porte-clé, fait main avec soin","p":10,"img":"/_blob/f6ff0e1e1231954239408eb688213726"},{"n":"Porte-clé Renne Xmas","d":"La magie de Noël jusque dans les petits détails. Dis moi ce qui te ferait plaisir et je le réalise pour toi.","p":8,"img":"/_blob/494d5b1e67a7e7d3ba61f9c3741966df"},{"n":"Bien plus encore...","d":"","p":0,"img":""}]}</script><script id="code">
+var DATA=JSON.parse(document.getElementById("data").textContent);if(!DATA.code)DATA.code="sonkei2026";var CL=false;
+var FONTS="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;600&display=swap";
+var STATIC='<div id="app"></div><div id="toast">Ajouté à ton panier ♡</div><button id="cart">Panier (0)</button><div id="panel"><ul id="items"></ul><div class="row"><b id="total">0 €</b><button class="btn" id="send">Commander</button></div></div><button id="edbtn" hidden>✎ Modifier mon site</button><div id="ed"></div><div id="gate" hidden><div class="gbox"><p>Entre ton code</p><input id="gcode" type="password" autocomplete="off"><button class="btn" id="gok">Entrer</button><p id="gerr"></p></div></div>';
+var YARN='<svg class="yarn" viewBox="0 0 420 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M2 15 C 30 -5, 50 35, 80 15 S 130 -5, 160 15 S 210 35, 240 15 S 290 -5, 320 15 S 370 35, 418 15"/></svg>';
+document.body.insertAdjacentHTML("afterbegin",STATIC);
+var app=document.getElementById("app"),ed=document.getElementById("ed"),cart=[],tt;
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function mail(s,b){location.href="mailto:"+DATA.email+"?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b)}
+function R(){var d=DATA;document.title=d.name+" — Créations au fil, faites main avec amour";var h='<header><b>'+esc(d.name)+'</b><nav><a href="#atelier">Mon atelier</a><a href="#boutique">Boutique</a><a href="#surmesure">Sur mesure</a><a href="#rdv">Rendez-vous</a><a href="#contact">Contact</a></nav></header>'
++'<section class="hero"><p class="hand">Bienvenue chez moi ♡</p><h1>Des créations faites main,<br>tissées <em>avec le cœur</em>.</h1>'+YARN+'<p>'+esc(d.hero)+'</p><div class="btns"><a class="btn" href="#boutique">Découvrir mes créations</a><a class="btn alt" href="#surmesure">Imaginer ta pièce</a></div></section>'
++'<div class="alt-bg"><section id="atelier"><p class="hand title">Mon atelier</p><h2 class="title">Du fil, des mains, et beaucoup d’amour</h2><p class="lead">'+esc(d.atelier)+'</p><div class="grid"><div class="card"><div class="ph">♡</div><h3>Fait avec amour</h3><p>Chaque point est posé avec soin, à la main.</p></div><div class="card"><div class="ph">✿</div><h3>Unique, comme toi</h3><p>Des pièces en petites séries, jamais deux fois pareilles.</p></div><div class="card"><div class="ph">☼</div><h3>Pensé pour durer</h3><p>Des matières douces, choisies une à une.</p></div></div></section></div>'
++'<div class="alt-bg flat" style="background:var(--bg)"><section id="boutique"><p class="hand title">La boutique</p><h2 class="title">Mes créations du moment</h2><p class="lead">Un coup de cœur ? Ajoute-le à ton panier, je m’occupe du reste avec plaisir.</p><div class="grid">';
+d.products.forEach(function(x,i){h+='<div class="card"><div class="ph">'+(x.img?'<img src="'+esc(x.img)+'" alt="'+esc(x.n)+'">':'♡')+'</div><h3>'+esc(x.n)+'</h3><p>'+esc(x.d)+'</p><div class="row"><b>'+esc(x.p)+' €</b><button class="btn" data-i="'+i+'">Ajouter</button></div></div>'});
+h+='</div></section></div>'
++'<div class="alt-bg"><section id="surmesure"><p class="hand title">Rien que pour toi</p><h2 class="title">Imagine ta création sur mesure</h2><p class="lead">Une idée, une couleur, un cadeau à offrir ? Raconte-moi tout, je te réponds avec un devis et un délai.</p><p class="lead">Besoin d’inspiration ? Parcours les modèles sur <a class="l" href="https://www.knitcompanion.com" target="_blank" rel="noopener">Knit Companion</a> (crochet et tricot) ou <a class="l" href="https://www.braceletbook.com" target="_blank" rel="noopener">BraceletBook</a> (bracelets), puis colle le lien du modèle choisi ci-dessous.</p>'
++'<form id="fcustom"><label>Ton prénom<input name="nom" required></label><label>Type de création<select name="type"><option>Crochet (accessoire / fleurs…)</option><option>Porte-clé</option><option>Bracelet</option><option>Autre création au fil</option></select></label><label>Couleurs souhaitées<input name="couleurs" placeholder="Ex. rose poudré et crème"></label><label>Lien du modèle (optionnel)<input name="modele" type="url" placeholder="https://www.braceletbook.com/…"></label><label>Ton idée<textarea name="idee" rows="4" required placeholder="Raconte-moi : taille, motif, prénom à ajouter, date souhaitée…"></textarea></label><label>Budget approximatif (€)<input name="budget" type="number" min="0"></label><button class="btn" type="submit">Envoyer ma demande ♡</button></form></section></div>'
++'<section id="rdv"><p class="hand title">On se rencontre ?</p><h2 class="title">Réserve un moment avec moi</h2><p class="lead">Pour discuter d’un projet, choisir les fils ensemble ou récupérer ta commande, avec le sourire.</p>'
++'<form id="frdv"><label>Ton prénom<input name="nom" required></label><label>Motif<select name="motif"><option>Discuter d’un projet</option><option>Choisir les couleurs</option><option>Retrait de commande</option></select></label><label>Date<input type="date" name="date" required></label><label>Heure<select name="heure"><option>10:00</option><option>11:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></label><button class="btn" type="submit">Demander ce créneau</button></form></section>'
++'<div class="alt-bg"><section id="contact" style="text-align:center"><p class="hand">Un petit mot ?</p><h2>Écris-moi, je réponds avec plaisir</h2><p><a class="l" href="mailto:'+esc(d.email)+'">'+esc(d.email)+'</a><br>Instagram : '+esc(d.insta)+'</p></section></div><footer>Fait main avec amour · '+esc(d.name)+' · <span id="secret">©</span> 2026</footer>';
+app.innerHTML=h;
+document.getElementById("fcustom").onsubmit=function(e){e.preventDefault();var f=new FormData(e.target);mail("Commande sur mesure — "+f.get("type"),"Prénom : "+f.get("nom")+"\nCréation : "+f.get("type")+"\nCouleurs : "+f.get("couleurs")+"\nModèle : "+f.get("modele")+"\nBudget : "+f.get("budget")+" €\n\n"+f.get("idee"))};
+document.getElementById("frdv").onsubmit=function(e){e.preventDefault();var f=new FormData(e.target);mail("Demande de rendez-vous","Prénom : "+f.get("nom")+"\nMotif : "+f.get("motif")+"\nDate : "+f.get("date")+" à "+f.get("heure"))}}
+function toast(){var t=document.getElementById("toast");t.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("show")},1400)}
+function draw(){var u=document.getElementById("items");u.innerHTML="";var t=0;
+cart.forEach(function(x,k){t+=+x.p||0;var l=document.createElement("li");l.innerHTML="<span></span><a href='#' data-k='"+k+"'>retirer</a>";l.firstChild.textContent=x.n+" — "+x.p+" €";u.appendChild(l)});
+document.getElementById("total").textContent=t+" €";document.getElementById("cart").textContent="Panier ("+cart.length+")"}
+document.addEventListener("click",function(e){var t=e.target,i=t.getAttribute&&t.getAttribute("data-i"),k=t.getAttribute&&t.getAttribute("data-k");
+if(i!==null&&i!==false&&t.hasAttribute("data-i")){cart.push(DATA.products[i]);draw();toast()}
+else if(t.hasAttribute&&t.hasAttribute("data-k")&&t.tagName==="A"){e.preventDefault();cart.splice(k,1);draw()}
+else if(t.id==="cart"){document.getElementById("panel").classList.toggle("open")}
+else if(t.id==="send"&&cart.length){mail("Commande "+DATA.name,cart.map(function(x){return "- "+x.n+" ("+x.p+" €)"}).join("\n")+"\n\nTotal : "+document.getElementById("total").textContent)}});
+/* ---- éditeur (visible seulement pour la propriétaire) ---- */
+function msg(t){var m=document.getElementById("msg");if(m)m.textContent=t}
+function E(){var d=DATA,h='<h3>Modifier mon site</h3><button class="btn alt sm" id="closeed">Fermer</button><label>Nom du site<input data-f="name" value="'+esc(d.name)+'"></label><label>Mon email<input data-f="email" value="'+esc(d.email)+'"></label><label>Mon Instagram<input data-f="insta" value="'+esc(d.insta)+'"></label><label>Code secret pour modifier le site<input data-f="code" value="'+esc(d.code)+'"></label><label>Texte d’accueil<textarea data-f="hero" rows="3">'+esc(d.hero)+'</textarea></label><label>Texte de l’atelier<textarea data-f="atelier" rows="4">'+esc(d.atelier)+'</textarea></label><h4>Mes produits</h4>';
+d.products.forEach(function(p,i){h+='<div class="pe"><input data-p="'+i+'" data-k="n" value="'+esc(p.n)+'" placeholder="Nom"><input data-p="'+i+'" data-k="d" value="'+esc(p.d)+'" placeholder="Description"><input data-p="'+i+'" data-k="p" type="number" min="0" value="'+esc(p.p)+'" placeholder="Prix en €"><input data-p="'+i+'" data-k="img" value="'+esc(p.img)+'" placeholder="Photo : nom du fichier (ex. renne.jpg)"><div class="pr">'+(CL?'<label class="btn alt sm">Photo<input type="file" accept="image/*" data-up="'+i+'" hidden></label>':'')+'<button class="btn alt sm" data-del="'+i+'">Supprimer</button></div></div>'});
+h+='<button class="btn alt sm" id="addp">+ Ajouter un produit</button><p id="msg"></p><button class="btn" id="save">Enregistrer et publier</button>';ed.innerHTML=h}
+function dl(){var b=new Blob([build(DATA)],{type:"text/html"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="index.html";document.body.appendChild(a);a.click();a.remove();msg("Fichier téléchargé ✓ Remplace ton ancien index.html par celui-ci, puis republie ton dossier.")}
+function build(d){var A="<"+"script";return "<!DOCTYPE html>\n<html lang=\"fr\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><title>"+esc(d.name+" — Créations au fil, faites main avec amour")+"</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link href=\""+FONTS+"\" rel=\"stylesheet\"><style id=\"css\">"+document.getElementById("css").textContent+"</style></head><body>"+A+" id=\"data\" type=\"application/json\">"+JSON.stringify(d).replace(/</g,"\\u003c")+"<\/script>"+A+" id=\"code\">"+document.getElementById("code").textContent+"<\/script></body></html>"}
+document.addEventListener("click",function(e){var t=e.target,g=document.getElementById("gate");
+if(t.id==="secret"){g.hidden=false;document.getElementById("gcode").value="";document.getElementById("gerr").textContent="";document.getElementById("gcode").focus()}
+else if(t.id==="gok"){if(document.getElementById("gcode").value===DATA.code){g.hidden=true;E();ed.classList.add("open")}else{document.getElementById("gerr").textContent="Code incorrect"}}
+else if(t===g){g.hidden=true}});
+document.addEventListener("keydown",function(e){if(e.key==="Enter"&&document.activeElement&&document.activeElement.id==="gcode")document.getElementById("gok").click()});
+ed.addEventListener("input",function(e){var t=e.target,f=t.getAttribute("data-f"),i=t.getAttribute("data-p");
+if(f){DATA[f]=t.value;R()}else if(i!==null){var k=t.getAttribute("data-k");DATA.products[i][k]=k==="p"?(parseFloat(t.value)||0):t.value;R()}});
+ed.addEventListener("change",async function(e){var i=e.target.getAttribute("data-up"),f=e.target.files&&e.target.files[0];if(i===null||!f)return;
+try{var A=await claude.use("assets");if(!A){msg("Les photos ne sont pas disponibles ici.");return}var r=await A.upload(f);DATA.products[i].img=r.url;E();R();msg("Photo ajoutée ✓")}catch(x){msg("La photo n’a pas pu être envoyée.")}});
+ed.addEventListener("click",async function(e){var t=e.target;
+if(t.hasAttribute("data-del")){DATA.products.splice(t.getAttribute("data-del"),1);E();R()}
+else if(t.id==="closeed"){ed.classList.remove("open")}
+else if(t.id==="addp"){DATA.products.push({n:"Nouvelle création",d:"Description",p:0,img:""});E();R()}
+else if(t.id==="save"){if(!CL){dl();return}msg("Enregistrement…");try{var A=await claude.use("artifact");if(!A){msg("Enregistrement impossible ici.");return}await A.publish(build(DATA))}catch(x){msg(x&&x.code==="conflict"?"Le site a été mis à jour ailleurs, rechargement…":"L’enregistrement a échoué, réessaie dans un instant.")}}});
+R();
+(async function(){try{if(!window.claude)return;var u=await claude.use("user");if(!u||!(await u.canEdit()))return;CL=true;var b=document.getElementById("edbtn");b.hidden=false;b.onclick=function(){if(!ed.innerHTML)E();ed.classList.toggle("open")};E();ed.classList.add("open")}catch(x){}})();
+</script></body></html>
